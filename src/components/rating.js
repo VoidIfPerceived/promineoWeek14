@@ -5,6 +5,10 @@ import React from "react";
 
 export default class Rating extends React.Component {
     render() {
-        let rating = s;
+        let rating = null;
+        return (
+            null
+        )
+        
     }
 }
