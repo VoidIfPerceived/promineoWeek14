@@ -8,23 +8,16 @@ import Movie from "./Movie";
 export default class MovieList extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>Movie List</h1>
                 <ul>
-                <div className="card">
                     <div className="card-header bg-primary">
                     </div>
                     <div>
-
                         <ul>
-                            {movies.map((movie, index) => ( //ERROR in [eslint] 'movies' is not defined
-                                <li key={index}>{movie.movie}</li>
-                            ))}
+                            <Movie/>
                         </ul>
-                        <script>console.log(movies);</script>
                     </div>
-
-                </div>
                 </ul>
                 
             </div>
