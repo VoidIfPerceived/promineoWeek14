@@ -5,6 +5,7 @@ import React from "react";
 export default class Review extends React.Component {
     render() {
         const { review, rating } = this.props;
+        console.log(review);
         return (
             <div className="card">
                 <p>{review}</p>

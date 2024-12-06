@@ -14,16 +14,17 @@ export default class ReviewList extends React.Component {
     }
 
     componentDidMount() {
-        const reviews = this.props.reviews;
-        this.setState(reviews);
+        const reviews = this.props;
+        this.setState([reviews]);
     }
 
     render() {
+        console.log(this.state)
         return (
             <div>
                 {this.state.reviews.map((review, index) => (
                     <div key={index}>
-                        <Review/>
+                        <Review {...review}/>
                     </div>
                 ))}
             </div>
