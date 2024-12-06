@@ -1,12 +1,25 @@
 import React from "react";
 import Movie from "./Movie";
 import ReviewList from "./ReviewList";
+import MovieDBService from "./MovieDBService";
 
 
 
 //MovieList: a container for all the Movie components and their data.
 
 export default class MovieList extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            movies: []
+        };
+    }
+
+    componentDidMount() {
+        const movies = MovieDBService();
+        this.setState({ movies });
+    }
+
     render() {
         return (
             <div className="container">
@@ -25,7 +38,7 @@ export default class MovieList extends React.Component {
                         </ul>
                     </div>
                 </ul>
-                
+
             </div>
         )
     }
