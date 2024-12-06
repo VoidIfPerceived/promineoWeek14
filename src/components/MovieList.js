@@ -1,5 +1,6 @@
 import React from "react";
 import Movie from "./Movie";
+import ReviewList from "./ReviewList";
 
 
 
@@ -15,7 +16,12 @@ export default class MovieList extends React.Component {
                     </div>
                     <div>
                         <ul>
-                            <Movie/>
+                            {this.state.movies.map((movie, index) => (
+                                <li key={index}>
+                                    <Movie {...movie} />
+                                </li>
+                            ))}
+
                         </ul>
                     </div>
                 </ul>

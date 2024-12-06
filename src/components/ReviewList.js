@@ -1,11 +1,24 @@
 import React from "react";
-
+import Review from "./Review";
+import MovieDBService from "./MovieDBService";
 //ReviewList: a container inside of a Movie that houses Review components.
 
+let reviews = MovieDBService();
+
 export default class ReviewList extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            reviews: [],
+            index: null
+        }
+    }
     render() {
         return (
-            null
+
+            <div>
+                <Review/>
+            </div>
         )
     }
 }
