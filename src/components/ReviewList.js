@@ -1,9 +1,6 @@
 import React from "react";
 import Review from "./Review";
-import MovieDBService from "./MovieDBService";
 //ReviewList: a container inside of a Movie that houses Review components.
-
-let reviews = MovieDBService();
 
 export default class ReviewList extends React.Component {
     constructor(props) {
@@ -14,12 +11,11 @@ export default class ReviewList extends React.Component {
     }
 
     componentDidMount() {
-        const reviews = this.props;
-        this.setState([reviews]);
+        const reviews = this.props.reviews;
+        this.setState({reviews});
     }
 
     render() {
-        console.log(this.state)
         return (
             <div>
                 {this.state.reviews.map((review, index) => (

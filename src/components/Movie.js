@@ -1,6 +1,7 @@
 import React from "react";
 import MovieDBService from "./MovieDBService";
 import ReviewList from "./ReviewList";
+import ReviewForm from "./ReviewForm";
 
 let movies = MovieDBService();
 //Movie: a component that represents movie data (i.e. image, synopsis, rating, etc…)
@@ -19,8 +20,8 @@ export default class Movie extends React.Component {
         return (
             <div className="container">
                 {movies.map((movie, index) => (
-                    <div className="card" key={index}>
-                        <div className="card-header">
+                    <div className="container card" key={index}>
+                        <div className="card-header row">
                             <h3>
                                 {movie.title}
                             </h3> 
@@ -36,8 +37,11 @@ export default class Movie extends React.Component {
                                 {movie.synopsis}
                             </div>
                             <div className="col-md-3">
-                                <ReviewList {...movie.reviews}/>
+                                {movie.reviews.length > 0 ? <ReviewList reviews={movie.reviews}/> : null}
                             </div> 
+                        </div>
+                        <div className="card-footer row">
+                            <ReviewForm/>
                         </div>
                     </div>
                 ))}
