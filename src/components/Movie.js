@@ -1,5 +1,5 @@
 import React from "react";
-import MovieDBService from "./MovieDBService";
+import MovieDBService from "./MovieDBService" ;
 import ReviewList from "./ReviewList";
 import ReviewForm from "./ReviewForm";
 
@@ -13,7 +13,6 @@ export default class Movie extends React.Component {
             movie: {}
         };
     }
-
 
     render() {
         const { title, year, thumbnail, synopsis, reviews } = this.state.movie;
@@ -41,7 +40,7 @@ export default class Movie extends React.Component {
                             </div> 
                         </div>
                         <div className="card-footer row">
-                            <ReviewForm/>
+                            <ReviewForm addReview={this.props.addReview}/>
                         </div>
                     </div>
                 ))}

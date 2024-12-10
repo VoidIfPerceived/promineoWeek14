@@ -6,7 +6,7 @@ export default class ReviewList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            reviews: []
+            reviews: [],
         }
     }
 
