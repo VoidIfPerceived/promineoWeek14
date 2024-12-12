@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import MovieList from "./MovieList";
+import Movie from "./Movie";
 
 export default class ReviewForm extends React.Component {
     constructor(props) {

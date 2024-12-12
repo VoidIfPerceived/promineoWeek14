@@ -1,5 +1,5 @@
 import React from "react";
-import MovieDBService from "./MovieDBService" ;
+import MovieDBService from "./MovieDBService";
 import ReviewList from "./ReviewList";
 import ReviewForm from "./ReviewForm";
 
@@ -10,40 +10,43 @@ export default class Movie extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            movie: {}
+            movie: {},
+            reviews: []
         };
     }
 
+    addReview( review, stars, index ) {
+        console.log(review, stars, index)
+    }
+
     render() {
-        const { title, year, thumbnail, synopsis, reviews } = this.state.movie;
+        this.addReview = this.addReview.bind(this);
         return (
             <div className="container">
-                {movies.map((movie, index) => (
-                    <div className="container card" key={index}>
-                        <div className="card-header row">
-                            <h3>
-                                {movie.title}
-                            </h3> 
-                            <h5>
-                                ({movie.year})
-                            </h5>
+                <div className="container card" id={this.state.index}>
+                    <div className="card-header row">
+                        <h3>
+                            {this.props.title}
+                        </h3>
+                        <h5>
+                            ({this.props.year})
+                        </h5>
+                    </div>
+                    <div className="container card-body row">
+                        <div className="col-md-3">
+                            <img src={this.props.thumbnail} />
                         </div>
-                        <div className="container card-body row">
-                            <div className="col-md-3">
-                                <img src={movie.thumbnail}/>
-                            </div>
-                            <div className="col-md-6">
-                                {movie.synopsis}
-                            </div>
-                            <div className="col-md-3">
-                                {movie.reviews.length > 0 ? <ReviewList reviews={movie.reviews}/> : null}
-                            </div> 
+                        <div className="col-md-6">
+                            {this.props.synopsis}
                         </div>
-                        <div className="card-footer row">
-                            <ReviewForm addReview={this.props.addReview}/>
+                        <div className="col-md-3">
+                            {this.props.reviews.length > 0 ? <ReviewList reviews={this.props.reviews} /> : null}
                         </div>
                     </div>
-                ))}
+                    <div className="card-footer row">
+                        <ReviewForm addReview={this.props.addReview} />
+                    </div>
+                </div>
             </div>
         )
     }
