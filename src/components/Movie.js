@@ -4,19 +4,18 @@ import ReviewList from "./ReviewList";
 import ReviewForm from "./ReviewForm";
 
 let movies = MovieDBService();
-//Movie: a component that represents movie data (i.e. image, synopsis, rating, etc…)
+//Movie: a component that represents movie data (i.e. image, synopsis, stars, etc…)
 
 export default class Movie extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            movie: {},
-            reviews: []
+            movie: {}
         };
     }
 
-    addReview( review, stars, index ) {
-        console.log(review, stars, index)
+    addReview( review, stars ) {
+        console.log(review, stars)
     }
 
     render() {
@@ -44,7 +43,7 @@ export default class Movie extends React.Component {
                         </div>
                     </div>
                     <div className="card-footer row">
-                        <ReviewForm addReview={this.props.addReview} />
+                        <ReviewForm addReview={this.addReview} />
                     </div>
                 </div>
             </div>

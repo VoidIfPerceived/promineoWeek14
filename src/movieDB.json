@@ -8,7 +8,7 @@
         "reviews": [
             {
                 "review": "Good Movie, Trippy",
-                "rating": 4
+                "stars": 4
             }
         ]
     },
@@ -17,7 +17,6 @@
         "year": 2014,
         "synopsis": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
         "thumbnail": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,207_.jpg",
-        "rating": 5,
         "reviews": [
             
         ]
@@ -27,7 +26,6 @@
         "year": 2016,
         "synopsis": "When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.",
         "thumbnail": "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_QL75_UX140_CR0,0,140,207_.jpg",
-        "rating": 4,
         "reviews": [
             
         ]
@@ -37,7 +35,6 @@
         "year": 2003,
         "synopsis": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
         "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,207_.jpg",
-        "rating": 5,
         "reviews": [
             
         ]
@@ -47,7 +44,6 @@
         "year": 2009,
         "synopsis": "A local scientist is often regarded as a failure until he invents a machine that can make food fall from the sky. But little does he know that things are about to take a turn for the worst.",
         "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTg0MjAwNDI5MV5BMl5BanBnXkFtZTcwODkyMzg2Mg@@._V1_QL75_UX140_CR0,0,140,207_.jpg",
-        "rating": 3,
         "reviews": [
             
         ]
@@ -57,7 +53,6 @@
         "year": 1987,
         "synopsis": "Chief Brody's widow believes that her family is deliberately being targeted by another shark in search of revenge.",
         "thumbnail": "https://m.media-amazon.com/images/M/MV5BZGFiOTU1MTctMTRkMy00ZmVkLTk5YTktODMxZDhlOGQyN2MwXkEyXkFqcGc@._V1_QL75_UX190_CR0,4,190,281_.jpg",
-        "rating": 1,
         "reviews": [
             
         ]
