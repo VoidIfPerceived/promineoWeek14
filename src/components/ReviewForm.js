@@ -7,7 +7,7 @@ export default class ReviewForm extends React.Component {
         super(props);
         this.state = { //init state of ReviewForm
             review: "",
-            stars: ""
+            stars: {}
         }
     }
 
@@ -21,7 +21,7 @@ export default class ReviewForm extends React.Component {
             //Oh and also this fixed the bug where when I loaded the page it would call the function for every form it created
         this.props.addReview(this.state.review, this.state.stars);
         console.log("handled");
-        this.setState({ review: "", stars: "" });
+        this.setState({ review: "", stars: {} });
     }
 
     render() {

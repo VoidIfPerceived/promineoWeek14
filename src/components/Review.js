@@ -9,7 +9,7 @@ export default class Review extends React.Component {
         return (
             <div className="card">
                 <p>{review}</p>
-                <h4>{stars}</h4>
+                <Stars stars={stars}/>
             </div>
         )
     }

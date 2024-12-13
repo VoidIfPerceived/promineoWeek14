@@ -5,9 +5,18 @@ import React from "react";
 
 export default class Stars extends React.Component {
     render() {
-        let starImg = "https://github.com/VoidIfPerceived/promineoWeek14/blob/main/src/starImg.png" ;
+        const stars = this.props.stars;
+        console.log(stars)
+        const totalStars = [];
+        for (let x = 0; x < stars; x++) {
+            totalStars.push(
+                <img className="starImg" key={x} src="https://www.pngarts.com/files/8/3D-Star-Transparent-Images.png" height="40px"></img>
+            )
+        }
         return (
-            null
+            <div>
+                {totalStars}
+            </div>
         )
         
     }
