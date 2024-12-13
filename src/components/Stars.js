@@ -5,7 +5,7 @@ import React from "react";
 
 export default class Stars extends React.Component {
     render() {
-        let stars = null;
+        let starImg = "https://github.com/VoidIfPerceived/promineoWeek14/blob/main/src/starImg.png" ;
         return (
             null
         )
